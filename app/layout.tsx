@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-screen w-screen">
+    <html lang="en" className="w-scren h-screen">
       <body className={inter.className + "w-full h-full"}>
         <div className="w-full h-[50px] fixed top-0 z-10 bg-slate-500/50">
             <Navbar/>
