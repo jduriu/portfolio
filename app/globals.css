@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(76, 76, 76);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background: black;
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;

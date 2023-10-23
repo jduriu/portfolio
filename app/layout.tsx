@@ -31,14 +31,14 @@ export default function RootLayout({
       <body className={inter.className + "w-full h-full"}>
         <div className="w-full h-[50px] fixed top-0 z-10 bg-slate-500/50">
         <div className="w-full h-full flex justify-between items-center">
-            <div className="justify-self-start pl-4">
+            <div className="flex justify-center items-center w-[50px]">
                 J/U
             </div>
             <Navbar links={links}/>
             <Hamburger links={links}/>
         </div>
         </div>
-        <div className="pt-[50px] w-full h-full">
+        <div className="w-full h-full">
           {children}
         </div>
       </body>
