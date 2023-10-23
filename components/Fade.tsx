@@ -4,7 +4,7 @@ import { useState, useEffect} from 'react'
 export default function Fade ({ inputs, delay}) {
     const fadeProps = {
         "fadeIn": "transition ease-in-out duration-300 opacity-0 -translate-x-20",
-        "fadeOut": "transition ease-in-out duration-300 opacity-100"
+        "fadeOut": "transition ease-in-out duration-300 opacity-100 md:translate-x-20"
     }
 
     const [fade, setFade] = useState('fadeIn')
@@ -35,7 +35,7 @@ export default function Fade ({ inputs, delay}) {
     }, [fade, delay, inputIdx, inputs]);
 
     return (
-        <div className="text-7xl">
+        <div className="md:text-7xl text-5xl">
             <div className={getFadeProps(fade)}>{text}</div>
         </div>
     )
