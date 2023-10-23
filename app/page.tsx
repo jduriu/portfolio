@@ -17,8 +17,8 @@ export default function HomePage() {
     flex-col sm:flex items-center justify-center flex-wrap
     h-full w-full overflow-scroll"
     >
-      <div className="flex sm:w-1/2 flex-col justify-center items-center py-20">
-          <h1 className="md:text-7xl text-5xl">Jon Uriu</h1>
+      <div className="flex sm:w-1/2 flex-col justify-center items-center px-10 py-10">
+          <div className="md:text-7xl text-6xl">Jon Uriu</div>
           <div className="py-10">
             <Fade inputs={tagInputs} delay={3000}/>
           </div>
