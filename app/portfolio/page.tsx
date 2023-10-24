@@ -1,7 +1,30 @@
+'use client'
+import { useState } from 'react'
+import { portfolioData } from '@/data/portfolioData'
+import ProjectCard from '@/components/ProjectCard'
+
 export default function PorfolioPage() {
-  return (
-    <div>
-      Portfolio
-    </div>
-  )
+  const [projectIsSelected, setprojectIsSelected] = useState(false)
+  const [selectedProject, setSelectedProject] = useState(0)
+
+
+  // Projects tiled across the top or left
+  // Additional project information loads on the right
+  // Transition from a full width tile screen to a split view?
+
+  if (projectIsSelected) {
+    return (
+      <div className="flex mt-[50px]">
+        Detail View
+      </div>
+    )
+  } else {
+    return (
+      <div className="flex mt-[50px] flex-wrap gap-10">
+        {portfolioData.map((project) => (
+          <ProjectCard key={project.id} project={project}/>
+        ))}
+      </div>
+    )
+  }
 }
