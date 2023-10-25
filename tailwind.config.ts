@@ -13,7 +13,8 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'forest': "url('../images/forest-bg.jpg')",
-        'forestbw': "url('../images/forest-bg-bw-dark.jpg')"
+        'forestbw': "url('../images/forest-bg-bw-dark.jpg')",
+        'pebblebeach': "url('../images/pebble.jpg')"
       },
     },
   },
