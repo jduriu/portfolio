@@ -20,10 +20,12 @@ export default function PorfolioPage() {
     )
   } else {
     return (
-      <div className="flex mt-[50px] flex-wrap gap-10">
-        {portfolioData.map((project) => (
-          <ProjectCard key={project.id} project={project}/>
-        ))}
+      <div className="flex mt-[50px] w-full h-full justify-center items-center px-32">
+        <div className="flex flex-wrap gap-10">
+          {portfolioData.map((project) => (
+            <ProjectCard key={project.id} project={project}/>
+          ))}
+        </div>
       </div>
     )
   }
