@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { portfolioData } from '@/data/portfolioData'
 import ProjectCard from '@/components/ProjectCard'
+import GlassPane from '@/components/Glass'
 
 export default function PorfolioPage() {
   const [projectIsSelected, setprojectIsSelected] = useState(false)
@@ -20,11 +21,21 @@ export default function PorfolioPage() {
     )
   } else {
     return (
-      <div className="bg-pebblebeach bg-center bg-cover bg-scroll
-      flex w-full h-full justify-center items-center px-32">
-        <div className="flex flex-wrap gap-10 mt-[50px]">
+      <div
+      className="bg-pebblebeach bg-center bg-cover bg-scroll
+      flex w-full h-full justify-center items-center px-32
+      ">
+        {/* <GlassPane className="mt-[50px] rounded-sm flex justify-center items-center text-3xl backdrop-blur-sm">
+          <div>
+            Here are some of the more awesome things I've built!
+          </div>
+        </GlassPane> */}
+
+        <div className="flex flex-wrap justify-center gap-10 mt-[50px] ">
           {portfolioData.map((project) => (
-            <ProjectCard key={project.id} project={project}/>
+            <GlassPane key={project.id} className="p-3 z-10 rounded-xl backdrop-blur-[2px] hover:backdrop-blur-[0px]">
+              <ProjectCard project={project}/>
+            </GlassPane>
           ))}
         </div>
       </div>

@@ -16,6 +16,9 @@ const config: Config = {
         'forestbw': "url('../images/forest-bg-bw-dark.jpg')",
         'pebblebeach': "url('../images/pebble.jpg')"
       },
+      boxShadow: {
+        'glass': '0 4px 30px rgba(0, 0, 0, 0.1)'
+      },
     },
   },
   plugins: [],

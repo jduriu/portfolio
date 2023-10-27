@@ -5,7 +5,7 @@ export default function ProjectCard({project}) {
         <div
         className="
         relative h-[100px] w-[100px] sm:h-[200px] sm:w-[200px]
-        rounded-xl
+        rounded-xl hover:shadow-lg shadow-slate-500
         ">
             <div className="absolute top-0 h-full w-full">
                 <Image
