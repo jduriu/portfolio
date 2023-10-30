@@ -1,8 +1,12 @@
 import { ReactPropTypes } from "react"
 
 export default function GlassPane(props) {
+    let color = "bg-[#ffffff]/20"
+    if (props.paneColor) {
+        color = props.paneColor
+    }
 
-    const defaultClasses = "border border-white/60 bg-[#ffffff]/20 shadow-glass "
+    const defaultClasses = `border border-white/60 ${color} shadow-glass `
 
     return (
         <div className={defaultClasses + props.className}>

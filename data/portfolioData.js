@@ -155,4 +155,214 @@ export const portfolioData = [
         "deployed": false,
         "gitlab": "https://gitlab.com/jduriu/trippin",
     },
+    {
+        "id": 5,
+        "title": "Trippin",
+        "description": `
+            A vacation planning application which
+            allows the user to log a vacation trip, the duration of events,
+            and their locations. There is also an added feature that allows the
+            user to enter a yelp search url for a particular location and return
+            `,
+        "technologyUsed": [
+            "Python",
+            "Django",
+            "Beautiful Soup",
+            "SQLite",
+        ],
+        "challenges": `
+            I faced several challenges in this project. Mainly at the time feeling like
+            a novice with Python. However it was a great learning experience in what is
+            possible. Understanding how the beautiful soup query feature parses data from
+            html pages was a great way to understand how querying works and how it can
+            be implemented in useful ways.
+            `,
+        "futurePlans": `
+            This was one of the first applications I ever built, and it serves as a reminder of
+            where I started in my journey into software development.
+            `,
+        "image": trippin,
+        "deployed": false,
+        "gitlab": "https://gitlab.com/jduriu/trippin",
+    },
+    {
+        "id": 6,
+        "title": "Trippin",
+        "description": `
+            A vacation planning application which
+            allows the user to log a vacation trip, the duration of events,
+            and their locations. There is also an added feature that allows the
+            user to enter a yelp search url for a particular location and return
+            `,
+        "technologyUsed": [
+            "Python",
+            "Django",
+            "Beautiful Soup",
+            "SQLite",
+        ],
+        "challenges": `
+            I faced several challenges in this project. Mainly at the time feeling like
+            a novice with Python. However it was a great learning experience in what is
+            possible. Understanding how the beautiful soup query feature parses data from
+            html pages was a great way to understand how querying works and how it can
+            be implemented in useful ways.
+            `,
+        "futurePlans": `
+            This was one of the first applications I ever built, and it serves as a reminder of
+            where I started in my journey into software development.
+            `,
+        "image": trippin,
+        "deployed": false,
+        "gitlab": "https://gitlab.com/jduriu/trippin",
+    },
+    {
+        "id": 7,
+        "title": "Trippin",
+        "description": `
+            A vacation planning application which
+            allows the user to log a vacation trip, the duration of events,
+            and their locations. There is also an added feature that allows the
+            user to enter a yelp search url for a particular location and return
+            `,
+        "technologyUsed": [
+            "Python",
+            "Django",
+            "Beautiful Soup",
+            "SQLite",
+        ],
+        "challenges": `
+            I faced several challenges in this project. Mainly at the time feeling like
+            a novice with Python. However it was a great learning experience in what is
+            possible. Understanding how the beautiful soup query feature parses data from
+            html pages was a great way to understand how querying works and how it can
+            be implemented in useful ways.
+            `,
+        "futurePlans": `
+            This was one of the first applications I ever built, and it serves as a reminder of
+            where I started in my journey into software development.
+            `,
+        "image": trippin,
+        "deployed": false,
+        "gitlab": "https://gitlab.com/jduriu/trippin",
+    },
+    {
+        "id": 8,
+        "title": "Trippin",
+        "description": `
+            A vacation planning application which
+            allows the user to log a vacation trip, the duration of events,
+            and their locations. There is also an added feature that allows the
+            user to enter a yelp search url for a particular location and return
+            `,
+        "technologyUsed": [
+            "Python",
+            "Django",
+            "Beautiful Soup",
+            "SQLite",
+        ],
+        "challenges": `
+            I faced several challenges in this project. Mainly at the time feeling like
+            a novice with Python. However it was a great learning experience in what is
+            possible. Understanding how the beautiful soup query feature parses data from
+            html pages was a great way to understand how querying works and how it can
+            be implemented in useful ways.
+            `,
+        "futurePlans": `
+            This was one of the first applications I ever built, and it serves as a reminder of
+            where I started in my journey into software development.
+            `,
+        "image": trippin,
+        "deployed": false,
+        "gitlab": "https://gitlab.com/jduriu/trippin",
+    },
+    {
+        "id": 9,
+        "title": "Trippin",
+        "description": `
+            A vacation planning application which
+            allows the user to log a vacation trip, the duration of events,
+            and their locations. There is also an added feature that allows the
+            user to enter a yelp search url for a particular location and return
+            `,
+        "technologyUsed": [
+            "Python",
+            "Django",
+            "Beautiful Soup",
+            "SQLite",
+        ],
+        "challenges": `
+            I faced several challenges in this project. Mainly at the time feeling like
+            a novice with Python. However it was a great learning experience in what is
+            possible. Understanding how the beautiful soup query feature parses data from
+            html pages was a great way to understand how querying works and how it can
+            be implemented in useful ways.
+            `,
+        "futurePlans": `
+            This was one of the first applications I ever built, and it serves as a reminder of
+            where I started in my journey into software development.
+            `,
+        "image": trippin,
+        "deployed": false,
+        "gitlab": "https://gitlab.com/jduriu/trippin",
+    },
+    {
+        "id": 10,
+        "title": "Trippin",
+        "description": `
+            A vacation planning application which
+            allows the user to log a vacation trip, the duration of events,
+            and their locations. There is also an added feature that allows the
+            user to enter a yelp search url for a particular location and return
+            `,
+        "technologyUsed": [
+            "Python",
+            "Django",
+            "Beautiful Soup",
+            "SQLite",
+        ],
+        "challenges": `
+            I faced several challenges in this project. Mainly at the time feeling like
+            a novice with Python. However it was a great learning experience in what is
+            possible. Understanding how the beautiful soup query feature parses data from
+            html pages was a great way to understand how querying works and how it can
+            be implemented in useful ways.
+            `,
+        "futurePlans": `
+            This was one of the first applications I ever built, and it serves as a reminder of
+            where I started in my journey into software development.
+            `,
+        "image": trippin,
+        "deployed": false,
+        "gitlab": "https://gitlab.com/jduriu/trippin",
+    },
+    {
+        "id": 11,
+        "title": "Trippin",
+        "description": `
+            A vacation planning application which
+            allows the user to log a vacation trip, the duration of events,
+            and their locations. There is also an added feature that allows the
+            user to enter a yelp search url for a particular location and return
+            `,
+        "technologyUsed": [
+            "Python",
+            "Django",
+            "Beautiful Soup",
+            "SQLite",
+        ],
+        "challenges": `
+            I faced several challenges in this project. Mainly at the time feeling like
+            a novice with Python. However it was a great learning experience in what is
+            possible. Understanding how the beautiful soup query feature parses data from
+            html pages was a great way to understand how querying works and how it can
+            be implemented in useful ways.
+            `,
+        "futurePlans": `
+            This was one of the first applications I ever built, and it serves as a reminder of
+            where I started in my journey into software development.
+            `,
+        "image": trippin,
+        "deployed": false,
+        "gitlab": "https://gitlab.com/jduriu/trippin",
+    },
 ]
