@@ -27,8 +27,8 @@ export default function PorfolioPage() {
           <div className="w-full h-full flex justify-center items-center px-10">
             <GlassPane
             className="flex flex-col justify-center items-start
-            h-full w-full rounded-lg backdrop-blur-md px-10 gap-10"
-            paneColor="bg-[#000000]/40"
+            h-full w-full rounded-lg backdrop-blur-sm px-10 gap-10"
+            paneColor="bg-slate-500/30"
             >
               <div className="text-5xl">
                 Here are some of my favorite projects!
