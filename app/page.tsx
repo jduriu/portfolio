@@ -22,7 +22,6 @@ export default function HomePage() {
           <div className="py-10">
             <Fade inputs={tagInputs} delay={3000}/>
           </div>
-          {/* <AIot/> */}
       </div>
       <div className="flex sm:w-1/2 flex-col justify-center items-center px-10 py-10 mt-[50px]">
         <Image

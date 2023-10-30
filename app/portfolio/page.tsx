@@ -23,22 +23,22 @@ export default function PorfolioPage() {
     return (
       <div className="h-full w-full">
         <div className="bg-pebblebeach bg-center bg-cover bg-scroll fixed top-0 w-full h-full"/>
-        <div className="mt-[50px] fixed top-0 w-full h-full grid grid-cols-2 p-10">
+        <div className="mt-[50px] fixed top-0 w-full h-[calc(100%-50px)] grid grid-cols-2 p-10">
           <div className="w-full h-full flex justify-center items-center px-10">
             <GlassPane
             className="flex flex-col justify-center items-start
-            h-1/2 w-full rounded-lg backdrop-blur-md px-10"
+            h-full w-full rounded-lg backdrop-blur-md px-10 gap-10"
             paneColor="bg-[#000000]/40"
             >
               <div className="text-5xl">
-                Portfolio
+                Here are some of my favorite projects!
               </div>
               <div className="text-3xl">
-                Here are some of my favorite projects!
+                click on one to find out more
               </div>
             </GlassPane>
           </div>
-          <div className="flex flex-wrap justify-center gap-10 h-full w-full overflow-scroll">
+          <div className="flex flex-wrap justify-center gap-10 h-full w-full overflow-y-scroll">
             {portfolioData.map((project) => (
               <GlassPane
               key={project.id}

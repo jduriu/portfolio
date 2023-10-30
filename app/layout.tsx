@@ -38,9 +38,8 @@ export default function RootLayout({
             <Hamburger links={links}/>
         </div>
         </div>
-        <div className="w-full h-full">
-          {children}
-        </div>
+        {children}
+
       </body>
     </html>
   )
