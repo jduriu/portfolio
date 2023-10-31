@@ -27,11 +27,11 @@ export default function RootLayout({
 
 
   return (
-    <html lang="en" className="w-scren h-screen">
+    <html lang="en" className="w-screen h-screen">
       <body className={inter.className + "w-full h-full"}>
         <div className="w-full h-[50px] fixed top-0 z-10 bg-slate-500/50">
         <div className="w-full h-full flex justify-between items-center">
-            <div className="flex justify-center items-center w-[50px]">
+            <div className="text-2xl flex justify-center items-center w-[50px] pl-10">
                 J/U
             </div>
             <Navbar links={links}/>

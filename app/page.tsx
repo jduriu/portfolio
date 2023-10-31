@@ -45,7 +45,7 @@ export default function HomePage() {
           width={500}
           height={700}
           alt="Jon Uriu Image"
-          className="rounded-3xl w-[75%] transition ease-in-out duration-300"
+          className="rounded-3xl w-[75%]"
         />
       </div>
     </div>

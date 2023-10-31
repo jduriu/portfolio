@@ -5,23 +5,22 @@ export default function ProjectCard({project}) {
         <div
         className="
         relative h-[100px] w-[100px] sm:h-[200px] sm:w-[200px]
-        rounded-xl hover:shadow-lg shadow-slate-500
+        rounded-xl shadow-slate-500
         ">
             <div className="absolute top-0 h-full w-full">
                 <Image
-                width={400}
-                height={600}
+                fill
                 src={project.image}
                 alt={project.title}
-                className="h-full w-full overflow-hidden rounded-xl"
+                className="h-full w-full rounded-xl"
                 />
             </div>
             <div
             className="
             absolute h-full w-full
             flex justify-center items-center rounded-xl
-            sm:text-2xl bg-black opacity-0 hover:opacity-100
-            transition duration-400 ease-in-out
+            text-black transition duration-300 hover:duration-150
+            sm:text-2xl hover:backdrop-blur-lg opacity-0 hover:opacity-100
             ">
                 {project.title}
             </div>

@@ -23,30 +23,32 @@ export default function PorfolioPage() {
     return (
       <div className="h-full w-full">
         <div className="bg-pebblebeach bg-center bg-cover bg-scroll fixed top-0 w-full h-full"/>
-        <div className="mt-[50px] fixed top-0 w-full h-[calc(100%-50px)] grid grid-cols-2 p-10">
-          <div className="w-full h-full flex justify-center items-center px-10">
+        <div className="mt-[50px] fixed top-0 w-full h-[calc(100%-50px)] grid sm:grid-cols-2 sm:p-10">
+          <div className="w-full sm:h-full flex justify-center items-center p-10">
             <GlassPane
             className="flex flex-col justify-center items-start
-            h-full w-full rounded-lg backdrop-blur-sm px-10 gap-10"
+            sm:h-full w-full rounded-lg backdrop-blur-sm px-10 py-3 gap-5 sm:gap-10"
             paneColor="bg-slate-500/30"
             >
-              <div className="text-5xl">
+              <div className="text-3xl sm:text-3xl md:text-5xl">
                 Here are some of my favorite projects!
               </div>
-              <div className="text-3xl">
+              <div className="hidden sm:block sm:text-xl md:text-3xl">
                 click on one to find out more
               </div>
             </GlassPane>
           </div>
-          <div className="flex flex-wrap justify-center gap-10 h-full w-full overflow-y-scroll">
-            {portfolioData.map((project) => (
-              <GlassPane
-              key={project.id}
-              className="p-3 z-10 rounded-xl backdrop-blur-[2px]"
-              >
-                <ProjectCard project={project}/>
-              </GlassPane>
-            ))}
+          <div className=" h-full w-full overflow-y-scroll">
+            <div className="flex flex-wrap gap-10 justify-center items-center p-10">
+              {portfolioData.map((project) => (
+                <GlassPane
+                key={project.id}
+                className="p-3 rounded-xl "
+                >
+                  <ProjectCard project={project}/>
+                </GlassPane>
+              ))}
+            </div>
           </div>
         </div>
 
