@@ -21,9 +21,9 @@ export default function HomePage() {
           <div className="py-10">
             <Fade inputs={tagInputs} delay={2000}/>
           </div>
-          <div className="md:py-10">
+          <div className="md:p-10">
             <GlassPane
-              className="flex flex-col p-3 rounded-xl backdrop-blur-sm transition ease-in-out duration-300"
+              className="flex flex-col p-3 rounded-xl backdrop-blur-sm"
               paneColor="bg-slate-400/20"
             >
               <div className="text-2xl">

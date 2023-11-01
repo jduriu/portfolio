@@ -31,7 +31,7 @@ export const portfolioData = [
         `,
         "image": InsightAI,
         "deployed": "https://insightai-ten.vercel.app/",
-        "gitlab": "https://gitlab.com/jduriu/event-ease",
+        "git": "https://gitlab.com/jduriu/event-ease",
     },
     {
         "id": 1,
@@ -59,8 +59,8 @@ export const portfolioData = [
         service for front end authentication/authorization, and adding more detailed view pages for conferences.
         `,
         "image": EventEase,
-        "deployed": false,
-        "gitlab": "https://gitlab.com/jduriu/event-ease",
+        "deployed": null,
+        "git": "https://gitlab.com/jduriu/event-ease",
     },
     {
         "id": 2,
@@ -92,8 +92,8 @@ export const portfolioData = [
             a map feature to see where these frauds are most common and where they are concentrated.
             `,
         "image": frauditt,
-        "deployed": false,
-        "gitlab": "https://gitlab.com/team-6-goljira/frauddit",
+        "deployed": null,
+        "git": "https://gitlab.com/team-6-goljira/frauddit",
     },
     {
         "id": 3,
@@ -122,8 +122,8 @@ export const portfolioData = [
             None at this time
             `,
         "image": autoPilot,
-        "deployed": false,
-        "gitlab": "https://gitlab.com/jduriu/AutoPilot",
+        "deployed": null,
+        "git": "https://gitlab.com/jduriu/AutoPilot",
     },
     {
         "id": 4,
@@ -152,7 +152,7 @@ export const portfolioData = [
             where I started in my journey into software development.
             `,
         "image": trippin,
-        "deployed": false,
-        "gitlab": "https://gitlab.com/jduriu/trippin",
+        "deployed": null,
+        "git": "https://gitlab.com/jduriu/trippin",
     },
 ]

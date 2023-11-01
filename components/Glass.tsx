@@ -6,7 +6,7 @@ export default function GlassPane(props) {
         color = props.paneColor
     }
 
-    const defaultClasses = `border border-white/60 ${color} shadow-glass `
+    const defaultClasses = `border border-white/30 ${color} shadow-glass `
 
     return (
         <div className={defaultClasses + props.className}>
