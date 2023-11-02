@@ -26,10 +26,11 @@ export default function PortfolioPage() {
   return (
     <div className="h-full w-full">
       <div className="bg-pebblebeach bg-center bg-cover fixed top-0 w-full h-full"/>
-      <div className="mt-[50px] fixed top-0 w-full h-[calc(100%-50px)] grid sm:grid-cols-4 sm:p-10">
+      <div className="mt-[50px] fixed top-0 w-full h-[calc(100%-50px)] p-5 grid sm:grid-cols-4">
         <div
         className={`${projectIsSelected ? "col-span-3" : "col-span-2"}
-        sm:h-full flex justify-center items-center`}
+        overflow-hidden p-10
+        sm:max-h-full flex justify-center items-center`}
         >
           <GlassPane
           className="flex flex-col justify-center items-start
@@ -52,9 +53,9 @@ export default function PortfolioPage() {
         </div>
         <div className={`${projectIsSelected ? "col-span-1" : "col-span-2"}
         transition duration-500
-        h-full overflow-y-scroll`}
+        overflow-hidden h-full`}
         >
-          <div className="flex flex-wrap gap-10 justify-center items-center p-10">
+          <div className="flex flex-wrap h-full py-10 gap-10 justify-center items-center overflow-y-scroll">
             {portfolioData.map((project) => (
               <GlassPane
               key={project.id}

@@ -17,7 +17,9 @@ const config: Config = {
         'pebblebeach': "url('../images/pebble.jpg')"
       },
       boxShadow: {
-        'glass': '0 4px 30px rgba(0, 0, 0, 1)'
+        'glass': '0 4px 30px rgba(73, 78, 78)',
+        'btn-outer': '.3rem .3rem .6rem rgba(36, 38, 39), -.2rem -.2rem .5rem rgba(166, 183, 183 )',
+        'btn-inner': 'inset .3rem .3rem .6rem rgba(36, 38, 39) , inset -.2rem -.2rem .5rem rgba(166, 183, 183 )',
       },
     },
   },
