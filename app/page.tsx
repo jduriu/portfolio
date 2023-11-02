@@ -1,7 +1,10 @@
+'use client'
+
 import Fade from "@/components/Fade";
 import GlassPane from "@/components/Glass";
 import SelfPortrait from "@/images/SelfPortrait.jpeg";
 import Image from "next/image";
+import { motion } from "framer-motion"
 
 export default function HomePage() {
   const tagInputs = ["Creator", "Developer", "Engineer"];
@@ -15,7 +18,13 @@ export default function HomePage() {
           <div className="py-10">
             <Fade inputs={tagInputs} delay={2000} />
           </div>
-          <div className="md:p-10">
+          <motion.div
+            className="md:p-10"
+            initial={{ opacity: 0, x: "-100%"}}
+            animate={{ opacity: 1, x: "0" }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+
+          >
             <GlassPane
               className="flex flex-col p-3 rounded-xl backdrop-blur-sm"
               paneColor="bg-slate-400/20"
@@ -28,9 +37,14 @@ export default function HomePage() {
                 them too!
               </div>
             </GlassPane>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col justify-center items-center px-10 md:py-10 gap-10 md:h-full ">
+        <motion.div
+          className="flex flex-col justify-center items-center px-10 md:py-10 gap-10 md:h-full "
+          initial={{ opacity: 0, scale: 0.5}}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <Image
             src={SelfPortrait}
             width={500}
@@ -38,7 +52,7 @@ export default function HomePage() {
             alt="Jon Uriu Image"
             className="rounded-3xl w-[60%]"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
