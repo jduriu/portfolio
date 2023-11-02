@@ -2,11 +2,21 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import Slider from '@/components/DetailButtons'
+import DetailButtons from '@/components/DetailButtons'
 
 export default function ProjectDetails({project}) {
 
     const [selectedContent, setSelectedContent] = useState('challenges')
+    const [content, setContent] = useState()
+
+    useEffect(() => {
+        console.log('useEffect fired')
+        for (let [k, v] of Object.entries(project)) {
+          if (selectedContent === k) {
+            setContent(v)
+          }
+        }
+      }, [selectedContent, project])
 
     return (
         <div className="h-full w-full overflow-y-scroll
@@ -27,13 +37,13 @@ export default function ProjectDetails({project}) {
             </div>
             <div className="flex flex-col gap-5">
                 <div className="w-full">
-                    <Slider
-                    setSelectedContent={setSelectedContent}
-                    selectedContent={selectedContent}
+                    <DetailButtons
+                    selectCategory={setSelectedContent}
+                    selectedCategory={selectedContent}
                     />
                 </div>
                 <div className="px-5">
-                    {project[selectedContent]}
+                    {content}
                 </div>
             </div>
         </div>
