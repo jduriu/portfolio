@@ -5,7 +5,6 @@ import ProjectCard from "@/components/ProjectCard";
 import GlassPane from "@/components/Glass";
 import ProjectDetails from "@/components/ProjectDetails";
 import PanAnimation from "@/components/PanAnimation";
-import { motion, AnimatePresence } from "framer-motion";
 
 export default function PortfolioPage() {
   const [projectIsSelected, setProjectIsSelected] = useState(false);
@@ -39,7 +38,7 @@ export default function PortfolioPage() {
             paneColor="bg-slate-500/50"
           >
               {projectIsSelected ? (
-                <PanAnimation motionVariant='topToBottom' duration={1} trigger={selectedProjectIdx}>
+                <PanAnimation motionVariant='leftToTop' duration={1} trigger={selectedProjectIdx}>
                   <ProjectDetails
                     project={selectedProject}
                     setProjectIsSelected={setProjectIsSelected}
@@ -60,20 +59,20 @@ export default function PortfolioPage() {
           </GlassPane>
         </div>
         <div
-          className={`overflow-hidden h-full w-full
+          className={`overflow-hidden h-full w-full row-span-3
             ${projectIsSelected ? "sm:col-span-1"
-            : "sm:col-span-2 row-span-3"}
+            : "sm:col-span-2"}
           `}
           >
           <div
-            className={`w-full flex p-5 gap-10 sm:p-10 sm:items-center
+            className={`flex gap-10 sm:p-10 items-center
               ${projectIsSelected ?
-              "sm:flex-wrap sm:h-full sm:overflow-y-scroll overflow-x-scroll"
+              "w-full sm:flex-wrap h-full sm:overflow-y-scroll overflow-x-scroll"
               :
-              "flex-col overflow-y-scroll h-full justify-start"}
+              "flex-wrap overflow-y-scroll h-full justify-center"}
           `}>
             {portfolioData.map((project) => (
-              <GlassPane key={project.id} className="p-3 rounded-xl flex flex-col items-center justify-between gap-2">
+              <GlassPane key={project.id} className="p-2 rounded-xl flex flex-col items-center justify-between">
                 <ProjectCard
                   project={project}
                   setSelectedId={setSelectedProjectIdx}

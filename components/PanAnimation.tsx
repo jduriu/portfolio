@@ -43,6 +43,12 @@ export default function PanAnimation(
       yInitial: "-100%",
       yExit: "100%",
     },
+    leftToTop: {
+      xInitial: "-100%",
+      xExit: "0%",
+      yInitial: "0",
+      yExit: "-100%",
+    },
   }
   const motionProps = motionVariants[motionVariant]
 
