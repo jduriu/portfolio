@@ -12,8 +12,8 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
       className="h-full w-full overflow-y-scroll
         flex flex-col gap-5"
     >
-      <div className="grid grid-cols-2 row-span-2 ">
-        <div className="flex flex-col justify-center items-center p-5">
+      <div className="flex flex-col lg:grid grid-cols-2 row-span-2 ">
+        <div className="before:flex flex-col justify-center items-center p-5">
           <button
             className="self-start pb-5 underline"
             onClick={() => setProjectIsSelected(false)}
@@ -28,7 +28,7 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
         </div>
         <div className="flex flex-col justify-center items-start gap-5 px-5">
           <div className="text-3xl">{project.title}</div>
-          <div className="text-xl">{project.description}</div>
+          <div className="lg:text-xl">{project.description}</div>
         </div>
       </div>
       <div className="flex flex-col gap-5">

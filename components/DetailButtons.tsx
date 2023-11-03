@@ -8,7 +8,7 @@ export default function DetailButtons({ selectCategory, selectedCategory }) {
   const buttonClasses = " py-2 px-3 bg-slate-500/30 rounded-lg ";
 
   return (
-    <div className="flex gap-4 px-5">
+    <div className="flex w-full flex-wrap justify-center sm:justify-start gap-4 px-5">
       {categories.map((category) =>
         category.id === selectedCategory ? (
           <button

@@ -50,6 +50,7 @@ export default function PanAnimation(
     <AnimatePresence mode="wait">
       <motion.div
         key={trigger}
+        className="h-full w-full"
         initial={{opacity: 0, x: motionProps.xInitial, y: motionProps.yInitial}}
         animate={{ opacity: 1, x:"0%", y:"0%"}}
         exit={{opacity: 0, x: motionProps.xExit, y: motionProps.yExit}}
