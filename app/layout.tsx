@@ -36,7 +36,7 @@ export default function RootLayout({
             <Hamburger links={links} />
           </div>
         </div>
-        {children}
+          {children}
       </body>
     </html>
   );
