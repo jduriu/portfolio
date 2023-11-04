@@ -9,10 +9,9 @@ export const portfolioData = [
         "id": 0,
         "title": "InsightAI",
         "description": `
-        A NextJS journal application design with server-side rendering in mind. Users can log in and record journal instances
+        A journal application design with server-side rendering in mind. Users can log in and record journal instances
         which are stored and analyzed using OpenAI and LangChain. Entries are analyzed and the user is able to receive live
-        feedback in the UI. The history view allows users to track their mood over time. Finally OpenAI is leveraged so users
-        can query or question their entries and receive AI generated responses tailored to their entries.
+        feedback in the UI.
         `,
         "technologyUsed": [
             "Javascript/React/NextJS",
@@ -38,9 +37,7 @@ export const portfolioData = [
         "title": "EventEase",
         "description": `
         A conference management application designed to handle both internal and client facing aspects. These
-        include internal models to schedule conferences, locations, participants, and presentations. This application
-        was built using domain-driven design techniques to house different parts of the application in microservices.
-        Various data transfer techniques are used such as polling for user data, queuing
+        include internal models to schedule conferences, locations, participants, and presentations.
         `,
         "technologyUsed": [
             "Python/Django",
@@ -132,7 +129,8 @@ export const portfolioData = [
             A vacation planning application which
             allows the user to log a vacation trip, the duration of events,
             and their locations. There is also an added feature that allows the
-            user to enter a yelp search url for a particular location and return
+            user to enter a yelp search url for a particular location and return top
+            destinations in that area.
             `,
         "technologyUsed": [
             "Python",

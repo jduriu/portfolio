@@ -3,8 +3,6 @@ import SkillsCard from "@/components/SkillsCard";
 import SkillsDetailCard from "@/components/SkillsDetailCard";
 import { useState } from 'react'
 
-
-
 export default function SkillsPage() {
 
   const [selectedField, setSelectedField] = useState(null)

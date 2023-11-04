@@ -38,7 +38,9 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
             selectedCategory={selectedContent}
           />
         </div>
-        <div className="px-5">{project[selectedContent]}</div>
+        <div className="px-5">
+          {project[selectedContent]}
+        </div>
       </div>
     </div>
   );
