@@ -5,7 +5,7 @@ export default function DetailButtons({ selectCategory, selectedCategory }) {
     { id: "futurePlans", name: "Updates" },
     { id: "links", name: "Links" },
   ];
-  const buttonClasses = " py-2 px-3 bg-slate-500/30 rounded-lg ";
+  const buttonClasses = "text-white backdrop-blur-sm py-2 px-3 bg-black/50 rounded-lg ";
 
   return (
     <div className="flex w-full flex-wrap justify-center sm:justify-start gap-4 px-5">
@@ -13,7 +13,7 @@ export default function DetailButtons({ selectCategory, selectedCategory }) {
         category.id === selectedCategory ? (
           <button
             key={category.name}
-            className={buttonClasses + "shadow-btn-inner  text-white"}
+            className={buttonClasses + "shadow-btn-inner transition duration-500"}
             onClick={() => selectCategory(category.id)}
           >
             {category.name}
@@ -22,7 +22,7 @@ export default function DetailButtons({ selectCategory, selectedCategory }) {
           <button
             key={category.name}
             className={
-              buttonClasses + "shadow-btn-outer  text-white/70 hover:text-white"
+              buttonClasses + "shadow-btn-outer hover:text-white transition duration-500"
             }
             onClick={() => selectCategory(category.id)}
           >

@@ -19,8 +19,8 @@ const config: Config = {
       },
       boxShadow: {
         'glass': '0 4px 30px black',
-        'btn-outer': '.3rem .3rem .4rem rgba(36, 38, 39), -.1rem -.1rem .4rem rgba(151, 159, 159)',
-        'btn-inner': 'inset .3rem .3rem .4rem rgba(62, 66, 66) , inset -.1rem -.1rem .4rem rgba(151, 159, 159)',
+        'btn-outer': '.3rem .3rem .6rem rgba(20, 20, 20), -.1rem -.1rem .6rem rgba(145, 145, 145)',
+        'btn-inner': 'inset .3rem .3rem .6rem rgba(20, 20, 20) , inset -.1rem -.1rem .6rem rgba(145, 145, 145)',
       },
       backdropBlur: {
         xs: '2px'

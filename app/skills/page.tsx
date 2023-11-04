@@ -14,10 +14,7 @@ export default function SkillsPage() {
       "groups": ["Languages", "System Design", "Frameworks", "Databases & Schema"]
     },
     {"id": "civil", "name": "Civil Engineering",
-      "groups": ["Technologies", "Design", "Construction"]
-    },
-    {"id": "business", "name": "Business Development",
-      "groups": ["Business"]
+      "groups": ["Technologies", "Design", "Construction", "Business"]
     },
   ]
 
@@ -41,10 +38,12 @@ export default function SkillsPage() {
                     {selectedField.groups.map((iconGroup) => (
                       <div className="flex flex-col gap-5" key={iconGroup}>
                         <div className="text-3xl text-center sm:self-start self-center">{iconGroup}</div>
-                        <div className="flex flex-wrap gap-5 items-center justify-center sm:justify-start">
+                        <div className="flex flex-wrap gap-5 md:gap-10 items-center justify-center sm:justify-start">
                           {iconGroups[iconGroup].map((icon) => (
                             <div className="flex flex-col justify-center items-center" key={icon.name}>
-                              {<icon.icon size={30}/>}
+                              <div className="text-7xl hover:-translate-y-2 transition easeinout duration-300">
+                                {<icon.icon/>}
+                              </div>
                               <div>{icon.name}</div>
                             </div>
                           ))}
@@ -52,7 +51,6 @@ export default function SkillsPage() {
                       </div>
                     ))}
                   </div>
-
                 </div>
               </GlassPane>
             </div>
