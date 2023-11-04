@@ -1,8 +1,8 @@
 'use client'
-import GlassPane from "@/components/Glass";
+import SkillsCard from "@/components/SkillsCard";
+import SkillsDetailCard from "@/components/SkillsDetailCard";
 import { useState } from 'react'
-import { IoArrowBackOutline } from 'react-icons/io5'
-import { iconGroups } from "@/components/icons";
+
 
 
 export default function SkillsPage() {
@@ -24,52 +24,10 @@ export default function SkillsPage() {
       <div className="w-full fixed h-[calc(100%-50px)] mt-[50px] overflow-hidden">
         <div className="w-full h-full flex justify-center items-center gap-10 flex-wrap overflow-y-scroll sm:p-10 py-10 px-2">
           {selectedField ?
-            <div className="w-full h-full">
-              <GlassPane className="w-full h-full rounded-3xl p-5 flex flex-col gap-10 overflow-hidden" paneColor="bg-black/50">
-                <div className="w-full h-full overflow-y-scroll p-5">
-                  <button className="flex gap-2 pb-5 hover:underline hover:scale-105 transition duration-200"
-                  onClick={() => setSelectedField(null)}
-                  >
-                    <IoArrowBackOutline size={25}/>
-                    <div>Back</div>
-                  </button>
-                  <div className="w-full h-full flex flex-col gap-5">
-                    <h1 className="text-5xl text-center self-center">{selectedField.name}</h1>
-                    {selectedField.groups.map((iconGroup) => (
-                      <div className="flex flex-col gap-5" key={iconGroup}>
-                        <div className="text-3xl text-center sm:self-start self-center">{iconGroup}</div>
-                        <div className="flex flex-wrap gap-5 md:gap-10 items-center justify-center sm:justify-start">
-                          {iconGroups[iconGroup].map((icon) => (
-                            <div className="flex flex-col justify-center items-center" key={icon.name}>
-                              <div className="text-7xl hover:-translate-y-2 transition easeinout duration-300">
-                                {<icon.icon/>}
-                              </div>
-                              <div>{icon.name}</div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </GlassPane>
-            </div>
+            <SkillsDetailCard selectedField={selectedField} setSelectedField={setSelectedField}/>
             :
             fields.map((field) => (
-              <GlassPane
-                className="min-w-[300px] w-1/4 h-1/3 md:h-1/2 rounded-xl hover:-translate-y-5 transition duration-300"
-                paneColor="bg-black/50"
-                key={field.id}
-                >
-                <button
-                  className="w-full h-full flex items-center justify-center p-5"
-                  onClick={() => setSelectedField(field)}
-                >
-                  <div className="text-4xl text-center">
-                    {field.name}
-                  </div>
-                </button>
-              </GlassPane>
+              <SkillsCard key={field.id} field={field} setSelectedField={setSelectedField}/>
             ))
           }
         </div>
