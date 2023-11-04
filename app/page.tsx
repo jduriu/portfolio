@@ -25,8 +25,8 @@ export default function HomePage() {
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <GlassPane
-              className="flex flex-col p-3 rounded-xl backdrop-blur-sm"
-              paneColor="bg-slate-400/20"
+              className="flex flex-col p-3 rounded-xl backdrop-blur-xs"
+              paneColor="bg-black/50"
             >
               <div className="text-2xl">Welcome to my website!</div>
               <div className="py-2">Fun fact,</div>

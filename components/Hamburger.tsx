@@ -1,6 +1,7 @@
 "use client";
 
-import { Menu, X } from "react-feather";
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { AiOutlineClose } from 'react-icons/ai'
 import { useState } from "react";
 import Link from "next/link";
 
@@ -19,7 +20,7 @@ export default function Hamburger({ links }) {
             <div>J/U</div>
           </div>
           <div className="flex justify-center items-center w-[50px]">
-            <X size={20} onClick={() => setOpen(false)} />
+            <AiOutlineClose size={20} onClick={() => setOpen(false)} />
           </div>
         </div>
         <div className="flex flex-col justify-center items-center gap-10 pt-10">
@@ -39,7 +40,7 @@ export default function Hamburger({ links }) {
   } else {
     return (
       <div className="sm:hidden justify-center items-center flex w-[50px]">
-        <Menu size={20} onClick={() => setOpen(true)} />
+        <GiHamburgerMenu  onClick={() => setOpen(true)} />
       </div>
     );
   }

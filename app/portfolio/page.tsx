@@ -32,10 +32,10 @@ export default function PortfolioPage() {
           `}
         >
           <GlassPane
-            className={`justify-center h-full flex flex-col p-5 w-full rounded-lg backdrop-blur-sm sm:p-10 gap-5 sm:gap-10
+            className={`justify-center h-full flex flex-col p-5 w-full rounded-lg sm:p-10 gap-5 sm:gap-10
               ${projectIsSelected ? "items-start" : "items-center"}
             `}
-            paneColor="bg-slate-500/50"
+            paneColor="bg-black/50"
           >
               {projectIsSelected ? (
                 <PanAnimation motionVariant='leftToTop' duration={1} trigger={selectedProjectIdx}>
