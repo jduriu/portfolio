@@ -47,6 +47,7 @@ export default function HomePage() {
         >
           <Image
             src={SelfPortrait}
+            priority
             width={500}
             height={700}
             alt="Jon Uriu Image"

@@ -18,6 +18,7 @@ export default function ProjectCard({
       <div className="absolute top-0 h-full w-full">
         <Image
           fill
+          sizes="100vw, 50vw, 25vw"
           src={project.image}
           alt={project.title}
           className="h-full w-full rounded-xl"
