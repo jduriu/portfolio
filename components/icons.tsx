@@ -1,19 +1,19 @@
-import { FaPython, FaCss3, FaReact, FaBootstrap,
-  FaLock, FaDraftingCompass, FaChalkboardTeacher
-} from 'react-icons/fa'
-import {FaPeopleGroup, FaMound, FaPanorama,} from 'react-icons/fa6'
+import { AiFillHtml5, AiOutlineNotification, AiFillGitlab, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import {
   BiLogoJavascript, BiLogoPostgresql, BiLogoMongodb,
   BiLogoDjango, BiLogoRedux, BiLogoTailwindCss,
   BiLogoDocker, BiWater, BiLineChart
 } from 'react-icons/bi'
-import { AiFillHtml5, AiOutlineNotification } from 'react-icons/ai'
 import { BsFiletypeSql, BsClipboardMinus } from 'react-icons/bs'
 import { DiSqllite } from 'react-icons/di'
-import { SiNextdotjs, SiMlflow, SiFastapi, SiBulma, SiAutodesk } from 'react-icons/si'
+import { FaPython, FaCss3, FaReact, FaBootstrap,
+  FaLock, FaDraftingCompass, FaChalkboardTeacher
+} from 'react-icons/fa'
+import {FaPeopleGroup, FaMound, FaPanorama,} from 'react-icons/fa6'
 import { LuFolder, LuFolders, LuScroll } from 'react-icons/lu'
-import { TfiTarget } from 'react-icons/tfi'
 import { RiMarkupFill } from 'react-icons/ri'
+import { SiNextdotjs, SiMlflow, SiFastapi, SiBulma, SiAutodesk } from 'react-icons/si'
+import { TfiTarget } from 'react-icons/tfi'
 
   export const iconGroups = {
     "Languages": [
@@ -67,4 +67,9 @@ import { RiMarkupFill } from 'react-icons/ri'
       {"name": "Training", "icon": FaChalkboardTeacher},
       {"name": "Marketing", "icon": AiOutlineNotification},
     ],
+    "Links": [
+      {"name": "Gitlab", "icon": AiFillGitlab, "url": "https://gitlab.com/jduriu"},
+      {"name": "Github", "icon": AiFillGithub, "url": "https://github.com/jduriu"},
+      {"name": "Linkedin", "icon": AiFillLinkedin, "url": "https://www.linkedin.com/in/jonathan-uriu/" },
+    ]
   }

@@ -56,12 +56,12 @@ export default function ContactForm({sent, setSent}) {
         onChange={(e) => setEmail(e.target.value)}
       />
       <label>Message*</label>
-      <textarea className="rounded text-black px-2"
+      <textarea className="rounded text-black p-2"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <div>* indicate required fields</div>
-      <button className="px-3 py-2 border border-white/50 rounded-xl" onClick={sendEmail}>
+      <div>* indicates required fields</div>
+      <button className="px-3 py-2 border border-white/50 rounded-xl hover:bg-slate-500/50 duration-300" onClick={sendEmail}>
         {sending ?
           "Loading" :
           "Send"
