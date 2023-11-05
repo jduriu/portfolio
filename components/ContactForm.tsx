@@ -2,18 +2,13 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-export default function ContactForm({sent, setSent}) {
+export default function ContactForm({setSent}) {
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [sending, setSending] = useState(false)
   const [error, setError] = useState(false)
-  const [errorMessage, setErrorMessage] = useState("")
-
-  const errorMessages = {
-    name: "Please fill in a name"
-  }
 
   const sendEmail = async (e) => {
     e.preventDefault()
@@ -68,8 +63,8 @@ export default function ContactForm({sent, setSent}) {
         }
       </button>
       {error &&
-      <div className="text-red-700">
-        {errorMessage}
+      <div className="text-red-700 flex flex-col gap-2">
+        Whoops, something happened and your email did not sent, please make sure all fields are filled in and try again
       </div>
       }
   </form>

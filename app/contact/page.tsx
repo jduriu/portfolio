@@ -43,7 +43,7 @@ export default function ContactPage() {
                   :
                   <div className="h-full w-full px-3">
                     <div className="self-start pb-5 -translate-x-3">Or fill out the form below to send me and email</div>
-                    <ContactForm sent={sent} setSent={setSent}/>
+                    <ContactForm setSent={setSent}/>
                   </div>
                 }
               </div>
