@@ -14,7 +14,9 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'forestbw': "url('../images/forest-bg-bw-dark.jpg')",
         'pebblebeach': "url('../images/pebble.jpg')",
-        'tahoe': "url('../images/tahoe.jpg')"
+        'tahoe': "url('../images/tahoe.jpg')",
+        'sd': "url('../images/sd.jpg')",
+        'sf': "url('../images/sf.jpg')",
       },
       boxShadow: {
         'glass': '0 4px 30px black',

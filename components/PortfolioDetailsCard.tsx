@@ -2,10 +2,11 @@ import GlassPane from "./Glass"
 import PanAnimation from "./PanAnimation"
 import ProjectDetails from "./ProjectDetails"
 
-
 export default function PortfolioDetailsCard({
   selectedProjectIdx, selectedProject, setProjectIsSelected, projectIsSelected
 }) {
+
+
   return (
     <GlassPane
     className={`justify-center h-full flex flex-col p-5 w-full rounded-lg sm:p-10 gap-5 sm:gap-10

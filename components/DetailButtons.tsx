@@ -5,7 +5,7 @@ export default function DetailButtons({ selectCategory, selectedCategory }) {
     { id: "futurePlans", name: "Updates" },
     { id: "links", name: "Links" },
   ];
-  const buttonClasses = "text-white backdrop-blur-sm py-2 px-3 bg-black/50 rounded-lg ";
+  const buttonClasses = "text-white py-2 px-3 bg-black/50 rounded-lg ";
 
   return (
     <div className="flex w-full flex-wrap justify-center sm:justify-start gap-4 px-5">
