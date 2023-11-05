@@ -1,7 +1,7 @@
 import { ReactPropTypes } from "react";
 
 export default function GlassPane(props) {
-  let color = "bg-[#ffffff]/20";
+  let color = "bg-none";
   if (props.paneColor) {
     color = props.paneColor;
   }

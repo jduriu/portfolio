@@ -1,6 +1,5 @@
 import GlassPane from "./Glass"
 
-
 export default function SkillsCard({field, setSelectedField}) {
   return (
     <GlassPane
