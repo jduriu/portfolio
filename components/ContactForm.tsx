@@ -44,14 +44,14 @@ export default function ContactForm({sent, setSent}) {
   }
 
   return (
-    <form className="w-full flex flex-col gap-5">
+    <form className="w-full flex flex-col gap-3">
       <label>Name*</label>
-      <input className="rounded text-black px-2" type="text"
+      <input className="rounded text-black p-2" type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <label>Email*</label>
-      <input className="rounded text-black px-2" type="email"
+      <input className="rounded text-black p-2" type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
