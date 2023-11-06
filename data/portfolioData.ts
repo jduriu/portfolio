@@ -34,7 +34,7 @@ export const portfolioData = [
         `,
         image: InsightAI,
         deployed: "https://insightai-ten.vercel.app/",
-        gitLink: "https://gitlab.com/jduriu/event-ease",
+        gitLink: "https://gitlab.com/jduriu/insightai",
     },
     {
         id: 1,
@@ -96,7 +96,7 @@ export const portfolioData = [
             `,
         image: frauditt, // cspell: disable-line
         deployed: null,
-        gitLink: "https://gitlab.com/team-6-goljira/frauddit",
+        gitLink: "https://gitlab.com/jduriu/frauddit",
     },
     {
         id: 3,

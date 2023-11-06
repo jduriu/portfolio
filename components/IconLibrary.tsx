@@ -2,9 +2,10 @@ import { AiFillHtml5, AiOutlineNotification, AiFillGitlab, AiFillGithub, AiFillL
 import {
   BiLogoJavascript, BiLogoPostgresql, BiLogoMongodb,
   BiLogoDjango, BiLogoRedux, BiLogoTailwindCss,
-  BiLogoDocker, BiWater, BiLineChart, BiLibrary
+  BiLogoDocker, BiWater, BiLineChart, BiLibrary, BiGitBranch
 } from 'react-icons/bi'
 import { BsFiletypeSql, BsClipboardMinus, BsFillFileEarmarkPersonFill } from 'react-icons/bs'
+import { CgWebsite } from 'react-icons/cg'
 import { DiSqllite } from 'react-icons/di'
 import { FaPython, FaCss3, FaReact, FaBootstrap,
   FaLock, FaDraftingCompass, FaChalkboardTeacher
@@ -64,6 +65,8 @@ export const iconLibrary = {
   "Marketing": AiOutlineNotification,
   "OpenAI/GPT3.5": RiOpenaiFill,
   "Library": BiLibrary,
+  "Deployed": CgWebsite,
+  "Repository": BiGitBranch,
 }
 
 export const contactLinks =  [

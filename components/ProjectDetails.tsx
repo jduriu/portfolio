@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import DetailButtons from "@/components/DetailButtons";
 import ProjectContent from "./ProjectContent";
+import Link from "next/link";
 
 export default function ProjectDetails({ project, setProjectIsSelected }) {
   const [selectedContent, setSelectedContent] = useState("");
@@ -22,11 +23,13 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
           >
             Back to List View
           </button>
-          <Image
-            src={project.image}
-            alt={project.title}
-            className="rounded-3xl shadow-glass"
-          />
+          <Link href={project.deployed ? project.deployed : project.gitLink} target="_blank">
+            <Image
+              src={project.image}
+              alt={project.title}
+              className="rounded-3xl shadow-glass"
+            />
+          </Link>
         </div>
         <div className="flex flex-col justify-center items-start gap-5 px-5">
           <div className="text-3xl">{project.title}</div>

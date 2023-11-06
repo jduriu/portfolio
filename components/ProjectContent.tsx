@@ -8,26 +8,26 @@ export default function ProjectContent({project, selectedContent}) {
     <div className="flex flex-wrap w-full gap-5">
     {selectedContent === "technologyUsed" || selectedContent === "links" ?
       selectedContent === "technologyUsed" ?
-        content.map(icon => (
-          <SkillIcon icon={icon}/>
+        content.map((icon) => (
+          <SkillIcon icon={icon} key={icon}/>
         ))
       :
-        <div className="flex flex-wrap gap-5">
-          {project.deployed && project.gitLink ? (
-            <>
-              <Link href={project.gitLink} className="py-2 px-3 border border-white/50 rounded-xl">
-                Repository
+        project.deployed && project.gitLink
+          ? (
+              <>
+              <Link href={project.gitLink}  target="_blank">
+                <SkillIcon icon="Repository"/>
               </Link>
-              <Link href={project.deployed} className="py-2 px-3 border border-white/50 rounded-xl">
-                Deployed Site
+              <Link href={project.deployed}  target="_blank">
+                <SkillIcon icon="Deployed"/>
               </Link>
-            </>
+              </>
           ):
-            <Link href={project.git}>Repository</Link>
-          }
-        </div>
-    :
-    content
+          <Link href={project.gitLink} target="_blank">
+            <SkillIcon icon="Repository"/>
+          </Link>
+      :
+      content
     }
   </div>
   )
