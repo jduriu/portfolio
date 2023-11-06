@@ -1,8 +1,8 @@
-import { AiFillHtml5, AiOutlineNotification, AiFillGitlab, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillHtml5, AiOutlineNotification, AiFillGitlab, AiFillGithub, AiFillLinkedin, } from 'react-icons/ai'
 import {
   BiLogoJavascript, BiLogoPostgresql, BiLogoMongodb,
   BiLogoDjango, BiLogoRedux, BiLogoTailwindCss,
-  BiLogoDocker, BiWater, BiLineChart
+  BiLogoDocker, BiWater, BiLineChart, BiLibrary
 } from 'react-icons/bi'
 import { BsFiletypeSql, BsClipboardMinus, BsFillFileEarmarkPersonFill } from 'react-icons/bs'
 import { DiSqllite } from 'react-icons/di'
@@ -11,7 +11,7 @@ import { FaPython, FaCss3, FaReact, FaBootstrap,
 } from 'react-icons/fa'
 import {FaPeopleGroup, FaMound, FaPanorama,} from 'react-icons/fa6'
 import { LuFolder, LuFolders, LuScroll } from 'react-icons/lu'
-import { RiMarkupFill } from 'react-icons/ri'
+import { RiMarkupFill, RiOpenaiFill } from 'react-icons/ri'
 import { SiNextdotjs, SiMlflow, SiFastapi, SiBulma, SiAutodesk } from 'react-icons/si'
 import { TfiTarget } from 'react-icons/tfi'
 
@@ -62,6 +62,8 @@ export const iconLibrary = {
   "Contracts": LuScroll,
   "Training": FaChalkboardTeacher,
   "Marketing": AiOutlineNotification,
+  "OpenAI/GPT3.5": RiOpenaiFill,
+  "Library": BiLibrary,
 }
 
 export const contactLinks =  [

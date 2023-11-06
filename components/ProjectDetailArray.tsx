@@ -1,9 +1,12 @@
+import SkillIcon from "./SkillIcon";
+
 export default function ProjectDetailArray({content, selectedContent}) {
   return (
-    <div className="flex flex-col w-full gap-5">
+    <div className="flex flex-wrap w-full gap-5">
     {selectedContent === "technologyUsed" ?
-    null
-      // Consider refactoring Icons to be usable across the application??
+      content.map(icon => (
+        <SkillIcon icon={icon}/>
+      ))
       :
       null
       // {content.map(item => (

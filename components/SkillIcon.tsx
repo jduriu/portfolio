@@ -2,7 +2,10 @@ import { iconLibrary } from '@/components/IconLibrary'
 
 export default function SkillIcon({icon}) {
 
-  const Icon = iconLibrary[icon]
+  let Icon = iconLibrary[icon]
+  if (!Icon) {
+    Icon = iconLibrary.Library
+  }
 
   return (
     <div className="flex flex-col justify-center items-center gap-3">

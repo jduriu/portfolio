@@ -16,8 +16,10 @@ export const portfolioData = [
         feedback in the UI.
         `,
         technologyUsed: [
-            "Javascript/React/NextJS",
-            "Postgres",
+            "Javascript",
+            "React",
+            "NextJS",
+            "PostgreSQL",
             "OpenAI/GPT3.5",
             "LangChain",
         ],
