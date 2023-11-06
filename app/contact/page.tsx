@@ -2,13 +2,11 @@
 import ContactForm from '@/components/ContactForm'
 import GlassPane from '@/components/Glass'
 import { useState } from 'react'
-import { iconGroups } from '@/components/icons'
+import { contactLinks } from '@/components/IconLibrary'
 import Link from 'next/link'
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false)
-
-  const links = iconGroups.Links
 
   return (
     <div className="h-full w-full">
@@ -19,7 +17,7 @@ export default function ContactPage() {
             <div className="h-full justify-self-start flex flex-col gap-5 overflow-hidden">
               <div>Reach out to me via social media</div>
               <div className="flex gap-5">
-                {links.map((link) => (
+                {contactLinks.map((link) => (
                   <div className="px-3" key={link.name}>
                     <Link href={link.url} target="_blank" className="flex flex-col justify-center items-center gap-1" >
                         <div className="text-3xl sm:text-5xl hover:-translate-y-2 transition duration-300">

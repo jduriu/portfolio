@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import DetailButtons from "@/components/DetailButtons";
+import ProjectDetailArray from "./ProjectDetailArray";
 
 export default function ProjectDetails({ project, setProjectIsSelected }) {
   const [selectedContent, setSelectedContent] = useState("");
   const content = project[selectedContent]
-
 
   return (
     <div
@@ -41,12 +41,11 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
           />
         </div>
         <div className="px-5">
-          {Array.isArray(content) ?
-          <div className="flex flex-col w-full gap-5">
-            {content.map(item => (
-              <div key={item}>{item}</div>
-            ))}
-          </div>
+          {selectedContent === "technologyUsed" || selectedContent === "links" ?
+            <ProjectDetailArray
+              content={content}
+              selectedContent={selectedContent}
+            />
           :
           content
           }
