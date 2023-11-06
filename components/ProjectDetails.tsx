@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import DetailButtons from "@/components/DetailButtons";
-import ProjectDetailArray from "./ProjectDetailArray";
+import ProjectContent from "./ProjectContent";
 
 export default function ProjectDetails({ project, setProjectIsSelected }) {
   const [selectedContent, setSelectedContent] = useState("");
-  const content = project[selectedContent]
+
 
   return (
     <div
@@ -41,14 +41,7 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
           />
         </div>
         <div className="px-5">
-          {selectedContent === "technologyUsed" || selectedContent === "links" ?
-            <ProjectDetailArray
-              content={content}
-              selectedContent={selectedContent}
-            />
-          :
-          content
-          }
+          <ProjectContent project={project} selectedContent={selectedContent}/>
         </div>
       </div>
     </div>

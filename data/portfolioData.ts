@@ -34,7 +34,7 @@ export const portfolioData = [
         `,
         image: InsightAI,
         deployed: "https://insightai-ten.vercel.app/",
-        git: "https://gitlab.com/jduriu/event-ease",
+        gitLink: "https://gitlab.com/jduriu/event-ease",
     },
     {
         id: 1,
@@ -44,9 +44,11 @@ export const portfolioData = [
         include internal models to schedule conferences, locations, participants, and presentations.
         `,
         technologyUsed: [
-            "Python/Django",
-            "Javascript/React",
-            "Postgres",
+            "Python",
+            "Django",
+            "Javascript",
+            "React",
+            "PostgreSQL",
             "Docker",
             "RabbitMQ",
         ],
@@ -61,7 +63,7 @@ export const portfolioData = [
         `,
         image: EventEase,
         deployed: null,
-        git: "https://gitlab.com/jduriu/event-ease",
+        gitLink: "https://gitlab.com/jduriu/event-ease",
     },
     {
         id: 2,
@@ -75,10 +77,10 @@ export const portfolioData = [
             `,
         technologyUsed: [
             "Python",
-            "FastApi",
+            "FastAPI",
             "Javascript",
             "React",
-            "PostGres",
+            "PostgreSQL",
             "Docker",
         ],
         challenges: `
@@ -94,7 +96,7 @@ export const portfolioData = [
             `,
         image: frauditt, // cspell: disable-line
         deployed: null,
-        git: "https://gitlab.com/team-6-goljira/frauddit",
+        gitLink: "https://gitlab.com/team-6-goljira/frauddit",
     },
     {
         id: 3,
@@ -107,10 +109,12 @@ export const portfolioData = [
             and service jobs to be completed. The sales API can create sales records and assign sales representatives to them.
             `,
         technologyUsed: [
-            "Python/Django",
-            "Javascript/React",
+            "Python",
+            "Django",
+            "Javascript",
+            "React",
             "Docker",
-            "Postgres",
+            "PostgreSQL",
         ],
         challenges: `
             This project was developed off of a template scaffold. It was challenging to jump into someone else's
@@ -124,7 +128,7 @@ export const portfolioData = [
             `,
         image: autoPilot,
         deployed: null,
-        git: "https://gitlab.com/jduriu/AutoPilot",
+        gitLink: "https://gitlab.com/jduriu/AutoPilot",
     },
     {
         id: 4,
@@ -155,6 +159,6 @@ export const portfolioData = [
             `,
         image: trippin, // cspell: disable-line
         deployed: null,
-        git: "https://gitlab.com/jduriu/trippin",
+        gitLink: "https://gitlab.com/jduriu/trippin",
     },
 ]
