@@ -32,7 +32,7 @@ export default function HomePage() {
               <div className="py-2">Fun fact,</div>
               <div>
                 The background images on this site are some of my favorite
-                places to be! Let know if you recognize them or if you enjoy
+                places to be! Let me know if you recognize them or if you enjoy
                 them too!
               </div>
             </GlassPane>
