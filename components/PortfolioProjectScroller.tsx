@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard"
 
 
 export default function PortfolioProjectScroller({
-  projectIsSelected, portfolioData, setProjectIsSelected, setSelectedProjectIdx
+  projectIsSelected, portfolioData, setProjectIsSelected, setSelectedProjectIdx, selectedProjectIdx
 }) {
   return (
     <div
@@ -23,6 +23,7 @@ export default function PortfolioProjectScroller({
         <GlassPane key={project.id} className="p-2 rounded-xl flex flex-col items-center justify-between">
           <ProjectCard
             project={project}
+            selectedProjectIdx={selectedProjectIdx}
             setSelectedId={setSelectedProjectIdx}
             setProjectSelected={setProjectIsSelected}
           />

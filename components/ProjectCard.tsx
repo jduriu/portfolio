@@ -4,6 +4,7 @@ export default function ProjectCard({
   project,
   setSelectedId,
   setProjectSelected,
+  selectedProjectIdx,
 }) {
   const handleSelect = (id) => {
     setSelectedId(id);
@@ -21,7 +22,7 @@ export default function ProjectCard({
           sizes="100vw, 50vw, 25vw"
           src={project.image}
           alt={project.title}
-          className="h-full w-full rounded-xl"
+          className={`h-full w-full rounded-xl ${project.id === selectedProjectIdx ? 'grayscale-0' : 'grayscale'}`}
           onClick={() => handleSelect(project.id)}
         />
       </div>

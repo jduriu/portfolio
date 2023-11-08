@@ -6,7 +6,7 @@ import PortfolioDetailsCard from "@/components/PortfolioDetailsCard";
 
 export default function PortfolioPage() {
   const [projectIsSelected, setProjectIsSelected] = useState(false);
-  const [selectedProjectIdx, setSelectedProjectIdx] = useState(0);
+  const [selectedProjectIdx, setSelectedProjectIdx] = useState(-1);
   const [selectedProject, setSelectedProject] = useState({})
 
   useEffect(() => {
@@ -31,6 +31,7 @@ export default function PortfolioPage() {
         >
           <PortfolioDetailsCard
             selectedProjectIdx={selectedProjectIdx}
+            setSelectedProjectIdx={setSelectedProjectIdx}
             selectedProject={selectedProject}
             setProjectIsSelected={setProjectIsSelected}
             projectIsSelected={projectIsSelected}
@@ -41,6 +42,7 @@ export default function PortfolioPage() {
           portfolioData={portfolioData}
           setProjectIsSelected={setProjectIsSelected}
           setSelectedProjectIdx={setSelectedProjectIdx}
+          selectedProjectIdx={selectedProjectIdx}
         />
       </div>
     </div>

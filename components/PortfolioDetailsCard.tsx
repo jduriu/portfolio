@@ -3,7 +3,7 @@ import PanAnimation from "./PanAnimation"
 import ProjectDetails from "./ProjectDetails"
 
 export default function PortfolioDetailsCard({
-  selectedProjectIdx, selectedProject, setProjectIsSelected, projectIsSelected
+  selectedProjectIdx, setSelectedProjectIdx, selectedProject, setProjectIsSelected, projectIsSelected
 }) {
 
 
@@ -19,6 +19,7 @@ export default function PortfolioDetailsCard({
           <ProjectDetails
             project={selectedProject}
             setProjectIsSelected={setProjectIsSelected}
+            setSelectedProjectIdx={setSelectedProjectIdx}
             />
         </PanAnimation>
       ) : (

@@ -6,7 +6,7 @@ import DetailButtons from "@/components/DetailButtons";
 import ProjectContent from "./ProjectContent";
 import Link from "next/link";
 
-export default function ProjectDetails({ project, setProjectIsSelected }) {
+export default function ProjectDetails({ project, setProjectIsSelected, setSelectedProjectIdx }) {
   const [selectedContent, setSelectedContent] = useState("");
 
 
@@ -19,7 +19,10 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
         <div className="before:flex flex-col justify-center items-center p-5">
           <button
             className="self-start pb-5 underline"
-            onClick={() => setProjectIsSelected(false)}
+            onClick={() => {
+              setProjectIsSelected(false)
+              setSelectedProjectIdx(-1)
+            }}
           >
             Back to List View
           </button>
@@ -27,7 +30,7 @@ export default function ProjectDetails({ project, setProjectIsSelected }) {
             <Image
               src={project.image}
               alt={project.title}
-              className="rounded-3xl shadow-glass"
+              className="rounded-3xl shadow-glass hover:scale-[102%] transition duration-300"
             />
           </Link>
         </div>
