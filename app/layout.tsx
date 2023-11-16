@@ -19,6 +19,7 @@ export default function RootLayout({
   const links = [
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
+    { name: "Resume", path: "https://docs.google.com/document/d/1GwAr3g1P8gGGC-5W-61Y1E8FO1gU6sf-7adOq5StcR8/edit?usp=sharing" },
     { name: "Skills", path: "/skills" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
