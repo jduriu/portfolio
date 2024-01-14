@@ -4,6 +4,7 @@ import EventEase from '@/images/projects/EventEase.png'
 import trippin from '@/images/projects/trippin.png'
 import autoPilot from '@/images/projects/AutoPilot.png'
 import InsightAI from '@/images/projects/InsightAI.png'
+import yahtzeeCLI from '@/images/projects/yahtzee_cli.png'
 /* cSpell:enable */
 
 export const portfolioData = [
@@ -33,6 +34,7 @@ export const portfolioData = [
         which can affect user experience. My plan is to continue to build out the API and add additional features.
         `,
         image: InsightAI,
+        color: 'light',
         deployed: "https://insightai-ten.vercel.app/",
         gitLink: "https://gitlab.com/jduriu/insightai",
     },
@@ -62,6 +64,7 @@ export const portfolioData = [
         service for front end authentication/authorization, and adding more detailed view pages for conferences.
         `,
         image: EventEase,
+        color: 'light',
         deployed: null,
         gitLink: "https://gitlab.com/jduriu/event-ease",
     },
@@ -95,6 +98,7 @@ export const portfolioData = [
             a map feature to see where these frauds are most common and where they are concentrated.
             `,
         image: frauditt, // cspell: disable-line
+        color: 'light',
         deployed: null,
         gitLink: "https://gitlab.com/jduriu/frauddit",
     },
@@ -127,6 +131,7 @@ export const portfolioData = [
             None at this time
             `,
         image: autoPilot,
+        color: 'light',
         deployed: null,
         gitLink: "https://gitlab.com/jduriu/AutoPilot",
     },
@@ -158,7 +163,33 @@ export const portfolioData = [
             where I started in my journey into software development.
             `,
         image: trippin, // cspell: disable-line
+        color: 'light',
         deployed: null,
         gitLink: "https://gitlab.com/jduriu/trippin",
+    },
+    {
+        id: 5,
+        title: "Yahtzee CLI", // cspell: disable-line
+        description: `
+            A simple yahtzee game clone built to be run in the command line. This is the first
+            in a series of versions I intend to build. The purpose of this project was to implement
+            the game logic for future versions.
+            `,
+        technologyUsed: [
+            "Python",
+        ],
+        challenges: `
+            This project was relatively straight forward. However I did experience some challenges when setting up
+            classes and organization. Determining which data needed to be shared and the life cycle of that
+            data took some trial and error.
+            `,
+        futurePlans: `
+            Add additional error handling and a better user experience for help menus.
+            Implement the logic in a full stack application.
+            `,
+        image: yahtzeeCLI, // cspell: disable-line
+        color: 'dark',
+        deployed: null,
+        gitLink: "https://github.com/jduriu/yahtzee_cli",
     },
 ]

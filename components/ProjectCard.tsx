@@ -27,11 +27,13 @@ export default function ProjectCard({
         />
       </div>
       <div
-        className="absolute h-full w-full
+        className={`absolute h-full w-full
 					hidden
 					sm:flex justify-center items-center rounded-xl
-				text-black transition duration-300 hover:duration-150
-					sm:text-2xl hover:backdrop-blur-lg opacity-0 hover:opacity-100"
+				  transition duration-300 hover:duration-150
+					sm:text-2xl hover:backdrop-blur-lg opacity-0 hover:opacity-100
+          ${project.color === 'dark' ? 'text-white' : 'text-black'}
+        `}
         onClick={() => handleSelect(project.id)}
       >
         {project.title}
