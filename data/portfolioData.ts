@@ -35,7 +35,7 @@ export const portfolioData = [
         `,
         image: InsightAI,
         color: 'light',
-        // deployed: "https://insightai-ten.vercel.app/",
+        deployed: "https://insightai-ten.vercel.app/",
         gitLink: "https://gitlab.com/jduriu/insightai",
     },
     {
