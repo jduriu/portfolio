@@ -27,7 +27,7 @@ export default function ProjectContent({project, selectedContent}) {
             <SkillIcon icon="Repository"/>
           </Link>
       :
-      content
+          <div className="text-lg">{content}</div>
     }
   </div>
   )

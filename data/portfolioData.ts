@@ -5,11 +5,42 @@ import trippin from '@/images/projects/trippin.png'
 import autoPilot from '@/images/projects/AutoPilot.png'
 import InsightAI from '@/images/projects/InsightAI.png'
 import yahtzeeCLI from '@/images/projects/yahtzee_cli.png'
+import Yahtzee from '@/images/projects/yahtzee.png'
 /* cSpell:enable */
 
 export const portfolioData = [
     {
         id: 0,
+        title: "Yahtzee",
+        description: `
+        A full stack application given as a tribute to a family game I grew up on as a child. Hopefully a well built application
+        with some surprising features disguised under the cover of a simple dice game.
+        `,
+        technologyUsed: [
+            "Python",
+            "FastAPI",
+            "Javascript",
+            "React",
+            "NextJS",
+            "MongoDB",
+            "Docker",
+        ],
+        challenges: `
+        I can only describe this application as a long term relationship. It has served as a testing ground for any new technology I am currently learning.
+        For this project I tried to challenge myself and use minimal pre-built components. This included everything from custom UI features to building
+        an authentication service with automatic refresh logic. While challenging, it allowed me to learn and fully understand what goes on under the hood of some
+        complex features.
+        `,
+        futurePlans: `
+        As of this writing in May of 2024, I'm consistently updating this project with the hope of deploying it on an enterprise cloud service like AWS soon.
+        `,
+        image: Yahtzee,
+        color: 'light',
+        // deployed: "https://insightai-ten.vercel.app/",
+        gitLink: "https://github.com/jduriu/yahtzee",
+    },
+    {
+        id: 1,
         title: "InsightAI",
         description: `
         A journal application design with server-side rendering in mind. Users can log in and record journal instances
@@ -39,7 +70,7 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/insightai",
     },
     {
-        id: 1,
+        id: 2,
         title: "EventEase",
         description: `
         A conference management application designed to handle both internal and client facing aspects. These
@@ -69,7 +100,7 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/event-ease",
     },
     {
-        id: 2,
+        id: 3,
         title: "Frauditt", // cspell: disable-line
         description: `
             This application was the combined effort of myself, Laurie Kim, Orion Schlegelmich,
@@ -103,7 +134,7 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/frauddit",
     },
     {
-        id: 3,
+        id: 4,
         title: "AutoPilot",
         description: `
             An application based on the combined effort of myself and Laurie Kim designed to manage a car dealership.
@@ -136,7 +167,32 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/AutoPilot",
     },
     {
-        id: 4,
+        id: 5,
+        title: "Yahtzee CLI", // cspell: disable-line
+        description: `
+            A simple yahtzee game clone built to be run in the command line. This is the first
+            in a series of versions I intend to build. The purpose of this project was to implement
+            the game logic for future versions.
+            `,
+        technologyUsed: [
+            "Python",
+        ],
+        challenges: `
+            This project was relatively straight forward. However I did experience some challenges when setting up
+            classes and organization. Determining which data needed to be shared and the life cycle of that
+            data took some trial and error.
+            `,
+        futurePlans: `
+            Add additional error handling and a better user experience for help menus.
+            Implement the logic in a full stack application.
+            `,
+        image: yahtzeeCLI, // cspell: disable-line
+        color: 'dark',
+        deployed: null,
+        gitLink: "https://github.com/jduriu/yahtzee_cli",
+    },
+    {
+        id: 6,
         title: "Trippin", // cspell: disable-line
         description: `
             A vacation planning application which
@@ -166,30 +222,5 @@ export const portfolioData = [
         color: 'light',
         deployed: null,
         gitLink: "https://gitlab.com/jduriu/trippin",
-    },
-    {
-        id: 5,
-        title: "Yahtzee CLI", // cspell: disable-line
-        description: `
-            A simple yahtzee game clone built to be run in the command line. This is the first
-            in a series of versions I intend to build. The purpose of this project was to implement
-            the game logic for future versions.
-            `,
-        technologyUsed: [
-            "Python",
-        ],
-        challenges: `
-            This project was relatively straight forward. However I did experience some challenges when setting up
-            classes and organization. Determining which data needed to be shared and the life cycle of that
-            data took some trial and error.
-            `,
-        futurePlans: `
-            Add additional error handling and a better user experience for help menus.
-            Implement the logic in a full stack application.
-            `,
-        image: yahtzeeCLI, // cspell: disable-line
-        color: 'dark',
-        deployed: null,
-        gitLink: "https://github.com/jduriu/yahtzee_cli",
     },
 ]

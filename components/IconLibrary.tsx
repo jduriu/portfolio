@@ -47,7 +47,7 @@ export const iconLibrary = {
   "Bootstrap": FaBootstrap,
   "Bulma": SiBulma,
   "PostgreSQL": BiLogoPostgresql,
-  "Mongo": BiLogoMongodb,
+  "MongoDB": BiLogoMongodb,
   "SQLite": DiSqllite,
   "AutoCAD": SiAutodesk,
   "Civil 3D": SiAutodesk,
