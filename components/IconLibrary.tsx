@@ -10,7 +10,7 @@ import { DiSqllite } from 'react-icons/di'
 import { FaPython, FaCss3, FaReact, FaBootstrap,
   FaLock, FaDraftingCompass, FaChalkboardTeacher
 } from 'react-icons/fa'
-import {FaPeopleGroup, FaMound, FaPanorama,} from 'react-icons/fa6'
+import {FaPeopleGroup, FaMound, FaPanorama, FaGolang,} from 'react-icons/fa6'
 import { LuFolder, LuFolders, LuScroll } from 'react-icons/lu'
 import { RiMarkupFill, RiOpenaiFill } from 'react-icons/ri'
 import { SiNextdotjs, SiMlflow, SiFastapi, SiBulma, SiAutodesk } from 'react-icons/si'
@@ -67,6 +67,7 @@ export const iconLibrary = {
   "Library": BiLibrary,
   "Deployed": CgWebsite,
   "Repository": BiGitBranch,
+  "Go": FaGolang,
 }
 
 export const contactLinks =  [

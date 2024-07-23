@@ -6,11 +6,37 @@ import autoPilot from '@/images/projects/AutoPilot.png'
 import InsightAI from '@/images/projects/InsightAI.png'
 import yahtzeeCLI from '@/images/projects/yahtzee_cli.png'
 import Yahtzee from '@/images/projects/yahtzee.png'
+import Monkey from '@/images/projects/Monkey.png'
 /* cSpell:enable */
 
 export const portfolioData = [
     {
         id: 0,
+        title: "Monkey Interpreter",
+        description: `
+        This project was a journey for me to learn more about how interpreters work.
+        It is a project based on the interpreter designed in 'Writing an Interpreter in Go' by Thorsten Ball.
+        My goal was to understand concepts like Lexical Analysis, Tokenization, and Parsing.
+        `,
+        technologyUsed: [
+            "Go",
+        ],
+        challenges: `
+        This project is a lot of new concepts for me. I'm using this project to gain a better understanding of Go and its syntax.
+        In addition to new programming language, I'm also learning under-the-hood concepts for interpreters.
+        Things like lexical analysis and parsing have been awesome to learn about! While challenging, this project has been a
+        great way to get some hands on experience with interpreters and how they operate.
+        `,
+        futurePlans: `
+        To be determined
+        `,
+        image: Monkey,
+        color: 'dark',
+        // deployed: "https://insightai-ten.vercel.app/",
+        gitLink: "https://github.com/jduriu/Monkey-Interpreter",
+    },
+    {
+        id: 1,
         title: "Yahtzee",
         description: `
         A full stack application given as a tribute to a family game I grew up on as a child. Hopefully a well built application
@@ -35,12 +61,12 @@ export const portfolioData = [
         As of this writing in May of 2024, I'm consistently updating this project with the hope of deploying it on an enterprise cloud service like AWS soon.
         `,
         image: Yahtzee,
-        color: 'light',
+        color: 'dark',
         // deployed: "https://insightai-ten.vercel.app/",
         gitLink: "https://github.com/jduriu/yahtzee",
     },
     {
-        id: 1,
+        id: 2,
         title: "InsightAI",
         description: `
         A journal application design with server-side rendering in mind. Users can log in and record journal instances
@@ -70,7 +96,7 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/insightai",
     },
     {
-        id: 2,
+        id: 3,
         title: "EventEase",
         description: `
         A conference management application designed to handle both internal and client facing aspects. These
@@ -100,7 +126,7 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/event-ease",
     },
     {
-        id: 3,
+        id: 4,
         title: "Frauditt", // cspell: disable-line
         description: `
             This application was the combined effort of myself, Laurie Kim, Orion Schlegelmich,
@@ -134,7 +160,7 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/frauddit",
     },
     {
-        id: 4,
+        id: 5,
         title: "AutoPilot",
         description: `
             An application based on the combined effort of myself and Laurie Kim designed to manage a car dealership.
@@ -167,7 +193,7 @@ export const portfolioData = [
         gitLink: "https://gitlab.com/jduriu/AutoPilot",
     },
     {
-        id: 5,
+        id: 6,
         title: "Yahtzee CLI", // cspell: disable-line
         description: `
             A simple yahtzee game clone built to be run in the command line. This is the first
@@ -192,7 +218,7 @@ export const portfolioData = [
         gitLink: "https://github.com/jduriu/yahtzee_cli",
     },
     {
-        id: 6,
+        id: 7,
         title: "Trippin", // cspell: disable-line
         description: `
             A vacation planning application which
