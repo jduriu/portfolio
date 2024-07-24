@@ -10,17 +10,19 @@ import { DiSqllite } from 'react-icons/di'
 import { FaPython, FaCss3, FaReact, FaBootstrap,
   FaLock, FaDraftingCompass, FaChalkboardTeacher
 } from 'react-icons/fa'
-import {FaPeopleGroup, FaMound, FaPanorama, FaGolang,} from 'react-icons/fa6'
+import {FaPeopleGroup, FaMound, FaPanorama, FaGolang, FaAws} from 'react-icons/fa6'
 import { LuFolder, LuFolders, LuScroll } from 'react-icons/lu'
 import { RiMarkupFill, RiOpenaiFill } from 'react-icons/ri'
-import { SiNextdotjs, SiMlflow, SiFastapi, SiBulma, SiAutodesk } from 'react-icons/si'
+import { SiNextdotjs, SiMlflow, SiFastapi, SiBulma, SiAutodesk, SiC, SiVercel } from 'react-icons/si'
 import { TfiTarget } from 'react-icons/tfi'
 
+
 export const iconGroups = {
-  "Languages": [ "Python", "Javascript", "HTML", "CSS", "SQL"],
+  "Languages": [ "Python", "Javascript", "HTML", "CSS", "SQL", "Go", "C"],
   "System Design": [ "Docker", "CI/CD", "Monolithic", "Microservices", "Auth"],
+  "Cloud Providers": ["AWS", "Vercel", "Gitlab Pages"],
   "Frameworks": [ "NextJS", "React", "Redux", "Django", "FastAPI", "Tailwind", "Bootstrap", "Bulma",],
-  "Databases & Schema": [ "PostgreSQL", "Mongo", "SQLite"],
+  "Databases & Schema": [ "PostgreSQL", "MongoDB", "SQLite"],
   "Technologies": [ "AutoCAD", "Civil 3D", "On Center", "Bluebeam"],
   "Design": [ "Grading & Drainage", "Stormwater Management", "Landscape Architecture"],
   "Construction": ["Estimating", "Takeoffs", "Outreach"],
@@ -68,6 +70,10 @@ export const iconLibrary = {
   "Deployed": CgWebsite,
   "Repository": BiGitBranch,
   "Go": FaGolang,
+  "C": SiC,
+  "AWS": FaAws,
+  "Vercel": SiVercel,
+  "Gitlab Pages": AiFillGitlab
 }
 
 export const contactLinks =  [

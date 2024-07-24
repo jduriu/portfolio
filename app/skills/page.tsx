@@ -9,7 +9,7 @@ export default function SkillsPage() {
 
   const fields = [
     {"id": "software", "name": "Software Engineering",
-      "groups": ["Languages", "System Design", "Frameworks", "Databases & Schema"]
+      "groups": ["Languages", "System Design", "Cloud Providers", "Frameworks", "Databases & Schema"]
     },
     {"id": "civil", "name": "Civil Engineering",
       "groups": ["Technologies", "Design", "Construction", "Business"]
