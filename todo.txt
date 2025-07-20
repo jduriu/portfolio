@@ -1,0 +1,39 @@
+Using this as a scratch pad for keeping track of things I want to incorporate
+
+Look at NextJS backend stuff! Also looking at upgrading NextJS in general for this application.
+
+Blog:
+  Long Term Goals:
+    - incorporate a database for blog creation
+    - backend for processing entries
+
+
+  Short Term:
+    - MVP for blogs
+    - custom handlers for various entry types
+    - Entries are read by day
+      - Loop over sections and format by type using pre-built components
+    - Check for any lightweight word processing libraries? Create my own?
+
+
+  Word processing (backend specifically designed to produce tokens with state objects to be read by the formatter)
+    - various state objects
+      - letter, word, sentence, paragraph, heading, lists, indentation
+    - takes in raw text and looks for things like
+    - stores state with style flags?
+      - look into how highlighting works and applying styling to the highlighted sections?
+    - look into keystroke rebounding (tune to what makes sense)
+    - Needs to be extremely fast ot handle a lot of keystrokes
+
+  Blog Output
+    - Has a list of dedicated categories which can be read from the word processor
+      - font (could be problematic if not every font is pre-loaded? Maybe don't worry about this for a blog, since all the same)
+      - bold
+      - italic
+      - underlined?
+      - font size
+      - font color
+      - background color
+    - program in presets (like headings of various size, etc.)
+    - Read the stream of tokens and display the correct format
+    -displays the formatted html
